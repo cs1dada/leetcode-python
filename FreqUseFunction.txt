@@ -12,3 +12,8 @@ l2.sort(key=l1.index)
 2. tuple = (v1, v2, v3, v4, ...) //不能修改的list
 3. dict  = {key1:value1, k2:v2, k3:v3, ...}
 4. set   = {v1, v2, v3, v4, ...}
+
+#error
+1. Python: Attribute Error - 'NoneType' object has no attribute 'something'
+
+NoneType means that instead of an instance of whatever Class or Object you think you're working with, you've actually got None. That usually means that an assignment or function call up above failed or returned an unexpected result.

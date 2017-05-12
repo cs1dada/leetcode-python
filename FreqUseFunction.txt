@@ -1,0 +1,14 @@
+#api
+1. set // 除去list中重複的元素, 缺點是順序會亂掉
+l1 = ['b','c','d','b','c','a','a']
+l2 = list(set(l1)) #['a', 'c', 'b', 'd']
+l2.sort(key=l1.index)
+
+2. abs // 算絕對值
+3. len //算lsit長度
+
+# structure
+1. lsit  = [v1, v2, v3, v4, ...]
+2. tuple = (v1, v2, v3, v4, ...) //不能修改的list
+3. dict  = {key1:value1, k2:v2, k3:v3, ...}
+4. set   = {v1, v2, v3, v4, ...}

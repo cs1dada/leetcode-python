@@ -52,11 +52,46 @@ class Solution(object):
             rightpath = path + str(node.val) + "->"
             self.binaryTreePathsRecu(node.right, rightpath, result)
 
+    def binaryTreePaths2(self, root):
+        result, path = [], []
+        self.binaryTreePathsRecu2(root, path, result)
+        return result
+    
+    def binaryTreePathsRecu2(self, node, path, result):
+        if node is None:
+            return
+
+        if node.left is node.right is None:
+            listpath = []
+            
+            path.append(node)
+            for n in path:
+                listpath.append(n.val)
+            result.append(listpath)
+            path.pop()
+
+        if node.left:
+            path.append(node)
+            self.binaryTreePathsRecu2(node.left, path, result)
+            path.pop()
+
+        if node.right:
+            path.append(node)
+            self.binaryTreePathsRecu2(node.right, path, result)
+            path.pop()            
+
 
 
 if __name__ == "__main__":
     root = TreeNode(1)
-    root.left = TreeNode(2)
+    root.left = TreeNode(1)
     root.right = TreeNode(3)
-    root.left.right = TreeNode(5)
-    print(Solution().binaryTreePaths(root))
+    root.left.right = TreeNode(1)
+    print(Solution().binaryTreePaths2(root))
+    exclusivePath = Solution().binaryTreePaths2(root)
+
+    maxExclusiveLen = 0
+    for somepath in exclusivePath:
+        if len(set(somepath)) > maxExclusiveLen:
+            maxExclusiveLen = len(set(somepath))
+    print(maxExclusiveLen)

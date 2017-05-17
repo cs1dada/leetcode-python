@@ -14,6 +14,8 @@
 #
 # Note: Recursive solution is trivial, could you do it iteratively?
 #
+# tag: Tree + Hash Table + Stack
+#
 
 # Definition for a  binary tree node
 class TreeNode:
@@ -23,6 +25,7 @@ class TreeNode:
         self.right = None
 
 class Solution(object):
+# # iteratively + stack    
     def inorderTraversal(self, root):
         """
         :type root: TreeNode
@@ -44,6 +47,22 @@ class Solution(object):
                     stack.append((buf.left, False))
 
         return traversal
+
+# recursively
+    def inorderTraversal2(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        traversal = []
+        self.recursive(root, traversal)
+        return traversal
+
+    def recursive(self, root, buf):
+        if root:
+            self.recursive(root.left, buf)
+            buf.append(root.val)
+            self.recursive(root.right, buf)
 
 if __name__ == "__main__":
     root = TreeNode(3)

@@ -1,4 +1,4 @@
-#api
+# api
 1. set // 除去list中重複的元素, 缺點是順序會亂掉
 l1 = ['b','c','d','b','c','a','a']
 l2 = list(set(l1)) #['a', 'c', 'b', 'd']
@@ -13,7 +13,30 @@ l2.sort(key=l1.index)
 3. dict  = {key1:value1, k2:v2, k3:v3, ...}
 4. set   = {v1, v2, v3, v4, ...}
 
-#error
+# usage
+1. if root is not None:
+    => if root:
+    
+2. arr = [1,2,3,4,5,6]
+    arr[3] = 4
+    arr[:3] = [1,2,3]
+    arr[3+1:] = [5,6]
+
+# error
 1. Python: Attribute Error - 'NoneType' object has no attribute 'something'
 
 NoneType means that instead of an instance of whatever Class or Object you think you're working with, you've actually got None. That usually means that an assignment or function call up above failed or returned an unexpected result.
+
+2. question-226, swap issue: var1, var2 = var1, var2
+
+#error
+root.left = self.invertTree(root.right)
+root.right = self.invertTree(root.left)
+
+#correct
+root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+
+#correct
+buf = root.left
+root.left = self.invertTree(root.right)
+root.right = self.invertTree(buf)

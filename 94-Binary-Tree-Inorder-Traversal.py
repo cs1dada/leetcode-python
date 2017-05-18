@@ -69,7 +69,7 @@ if __name__ == "__main__":
     root.left = TreeNode(4)
     root.left.left = TreeNode(1)
 
-    print (Solution().inorderTraversal(root))
+    print (Solution().inorderTraversal2(root))
 '''
 
 Given tree s:

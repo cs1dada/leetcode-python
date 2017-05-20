@@ -5,7 +5,8 @@ l2 = list(set(l1)) #['a', 'c', 'b', 'd']
 l2.sort(key=l1.index)
 
 2. abs // 算絕對值
-3. len //算lsit長度
+3. len // 算lsit長度
+4. sum // 算和
 
 # structure
 1. lsit  = [v1, v2, v3, v4, ...]

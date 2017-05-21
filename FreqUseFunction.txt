@@ -7,6 +7,7 @@ l2.sort(key=l1.index)
 2. abs // 算絕對值
 3. len // 算lsit長度
 4. sum // 算和
+5. reverse //反轉list, 回傳不是list, list(reverse(array)), slice的用法array[::-1]
 
 # structure
 1. lsit  = [v1, v2, v3, v4, ...]
@@ -22,6 +23,7 @@ l2.sort(key=l1.index)
     arr[3] = 4
     arr[:3] = [1,2,3]
     arr[3+1:] = [5,6]
+    arr[::-1] = [6,5,4,3,2,1]
 
 # error
 1. Python: Attribute Error - 'NoneType' object has no attribute 'something'

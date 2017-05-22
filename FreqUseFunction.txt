@@ -7,7 +7,7 @@ l2.sort(key=l1.index)
 2. abs // 算絕對值
 3. len // 算lsit長度
 4. sum // 算和
-5. reverse //反轉list, 回傳不是list, list(reverse(array)), slice的用法array[::-1]
+5. reverse //反轉list, 回傳不是list, list(reversed(array)), slice的用法array[::-1]
 
 # structure
 1. lsit  = [v1, v2, v3, v4, ...]

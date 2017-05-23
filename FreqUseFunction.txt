@@ -8,6 +8,26 @@ l2.sort(key=l1.index)
 3. len // 算lsit長度
 4. sum // 算和
 5. reverse //反轉list, 回傳不是list, list(reversed(array)), slice的用法array[::-1]
+6. str.join(iterable) // 把串起來
+// a = "Free your mind.", print("&".join(a)) //&F&r&e&e& &y&o&u&r& &m&i&n&d&.
+
+7. list  // string = "i love u", list(string)   //['i','','l','o','v','e','','u']
+8. split // string = "i love u", string.split() //['i','love','u']
+// b = "Welcome to the desert... of the real.", 
+// b.split("o") //['Welc','ome t',' the desert... ','f the real.']
+//
+// c = "What is real? How do you define real?"
+// c.split("",2) //['What','is','real? How do you define real?']
+
+9. range([start], stop[, step])
+//print(range(10))                //range(0, 10)
+//print(type(range(10)))          //<class 'range'>
+//print(list(range(10)))          //[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+//print(list(range(0, 10)))       //[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+//print(list(range(0, 10, 2)))    //[0, 2, 4, 6, 8]
+//print(list(range(9, -3, -1)))   //[9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+
+
 
 # structure
 1. lsit  = [v1, v2, v3, v4, ...]

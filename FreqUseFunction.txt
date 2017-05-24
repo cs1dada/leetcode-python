@@ -8,8 +8,9 @@ l2.sort(key=l1.index)
 3. len // 算lsit長度
 4. sum // 算和
 5. reverse //反轉list, 回傳不是list, list(reversed(array)), slice的用法array[::-1]
-6. str.join(iterable) // 把串起來
+6. str.join(iterable) // 把list 或字串用特殊字串起來
 // a = "Free your mind.", print("&".join(a)) //&F&r&e&e& &y&o&u&r& &m&i&n&d&.
+// a = ['d','a','n','i','e','l'], print("",join(a)) //daniel
 
 7. list  // string = "i love u", list(string)   //['i','','l','o','v','e','','u']
 8. split // string = "i love u", string.split() //['i','love','u']
@@ -44,6 +45,10 @@ l2.sort(key=l1.index)
     arr[:3] = [1,2,3]
     arr[3+1:] = [5,6]
     arr[::-1] = [6,5,4,3,2,1]
+    arr[1:3] = [2,3]
+    arr[3-1:1-1:-1] = [3,2]
+    arr[2::-1] = [3,2,1]
+
 
 # error
 1. Python: Attribute Error - 'NoneType' object has no attribute 'something'

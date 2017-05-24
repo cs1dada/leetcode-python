@@ -26,10 +26,12 @@ class Solution(object):
         stringBuf = list(s)
         print(stringBuf)
         for elem in range(0, len(stringBuf), 2*k):
-            print(elem)
-            stringBuf[elem:elem+k] = stringBuf[elem+k-1:elem]
-            print(stringBuf[elem:elem+k])
-            print(stringBuf[elem:elem+2*k])
+            #print(elem)
+            stringBuf[elem:elem+k] = list(reversed(stringBuf[elem:elem+k]))        
+            #print(stringBuf[elem:elem+k])
+            #print(list(reversed(stringBuf[elem:elem+k])))
+            #print(stringBuf[elem:elem+2*k])
+        return "".join(stringBuf)
 
 if __name__ == "__main__":
     print(Solution().reverseStr("hellomynameisdaniel",2))                        

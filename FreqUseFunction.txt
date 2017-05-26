@@ -1,5 +1,5 @@
 # api
-1. set // 除去list中重複的元素, 缺點是順序會亂掉
+1. set // 除去list中重複的元素, 缺點是順序會亂掉, 可以搭配sorted()做好排序
 l1 = ['b','c','d','b','c','a','a']
 l2 = list(set(l1)) #['a', 'c', 'b', 'd']
 l2.sort(key=l1.index)

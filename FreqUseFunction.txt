@@ -12,7 +12,22 @@ l2.sort(key=l1.index)
 // a = "Free your mind.", print("&".join(a)) //&F&r&e&e& &y&o&u&r& &m&i&n&d&.
 // a = ['d','a','n','i','e','l'], print("",join(a)) //daniel
 
+6.1. 
+//bool
+str为字符串 
+str.istitle() //判斷字串是否適合當作標題
+str.isupper() //判斷字串大寫
+str.islower() //判斷字串小寫
+str.isalnum() //所有字符都是数字或者字母 
+str.isalpha() //所有字符都是字母 
+str.isdigit() //所有字符都是数字 
+str.isspace() //所有字符都是空白字符、 、、 
+//str
+str.lower()  //回傳小寫字串
+
 7. list  // string = "i love u", list(string)   //['i','','l','o','v','e','','u']
+//list.count(x) //計算x出現的次數
+
 8. split // string = "i love u", string.split() //['i','love','u']
 // b = "Welcome to the desert... of the real.", 
 // b.split("o") //['Welc','ome t',' the desert... ','f the real.']

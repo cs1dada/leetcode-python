@@ -14,7 +14,7 @@ sorted(l2) //l2會被改變
 6. reverse //反轉list, 回傳不是list, list(reversed(array)), slice的用法array[::-1]
 7. str.join(iterable) // 把list 或字串用特殊字串起來
 // a = "Free your mind.", print("&".join(a)) //&F&r&e&e& &y&o&u&r& &m&i&n&d&.
-// a = ['d','a','n','i','e','l'], print("",join(a)) //daniel
+// a = ['d','a','n','i','e','l'], print("".join(a)) //daniel
 
 7.1. 
 //bool
